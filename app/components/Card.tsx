@@ -4,7 +4,7 @@ import Link from "next/link";
 type PropType = {
   title: string;
   poster_path: string;
-  id: string;
+  id: number;
 };
 
 export default function Card({ title, id, poster_path }: PropType) {

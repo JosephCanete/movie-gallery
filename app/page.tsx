@@ -20,6 +20,8 @@ type Movie = {
 
 export default async function Home() {
   const movies = await GetTopMovies();
+  const id = movies.id;
+  console.log(typeof id);
 
   return (
     <div className="grid gap-16 grid grid-cols-fluid">
